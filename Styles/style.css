@@ -119,7 +119,44 @@ nav {
 }
 
 /* Header */
+header {
+    display: block;
+    height: 100vh;
+}   
+
 .header-container video {
     width: fit-content;
     height: 100vh;
+    object-fit: cover;
 }
+
+/* Quote Section */
+.quote-block {
+    display: block;
+    height: auto;
+    width: 100%;
+    background-color: var(--color-light-ocean);
+    text-align: center;
+}
+
+.quote {
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.quote h2 {
+    font-size: 1.25rem;
+    font-weight: 400;
+}
+
+.quote h3 {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.quote span {
+    font-style: italic;
+}
+
+/* Local Love Section */
+
