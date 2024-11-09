@@ -20,3 +20,94 @@
     --color-ash: #33302E;
 }
 
+/* Typography */
+
+body {
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 1.6;
+    color: var(--color-ash);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Gabarito', sans-serif;
+    margin: .5em 0;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+h1 {
+	font-size: 2rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+}
+
+p {
+	margin: 1.5em 0;
+}
+
+/* Elements */
+
+main {
+    max-width: 120rem;
+}
+
+/* Links */
+
+a,
+a:visited {
+    color: var(--color-ocean);
+    text-decoration: none;
+}
+
+a:hover,
+a:focus,
+a:active {
+    color: var(--color-dark-ocean);
+    text-decoration: underline;
+}
+
+a:focus {
+    outline: 1px dotted var(--color-ocean); 
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--color-dark-ocean);
+}
+
+.nav-logo img {
+    width: 200px;
+    padding-left: 1rem;
+    padding-top: 1rem;
+}
+
+.nav-menu ul,
+.nav-menu li,
+.nav-menu a {
+    display: flexbox;
+    flex-direction: column;
+    list-style: none;
+    margin: 0;
+    padding: .5rem;
+    background-color: var(--color-ocean);
+    color: var(--color-ice);
+    font-weight: 500;
+}
+
+/* Header */
+.header-container video {
+    width: fit-content;
+    height: 100vh;
+}
