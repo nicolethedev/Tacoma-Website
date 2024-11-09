@@ -160,3 +160,23 @@ header {
 
 /* Local Love Section */
 
+.local-love-block {
+    display: block;
+    height: auto;
+    width: 100%;
+    background-color: var(--color-sand);
+    padding: 2rem 1rem;
+}
+
+.local-love-block h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding-bottom: 1rem;
+}
+
+.love-card {
+    border: var(--color-moss) 3px solid;
+    border-radius: 8px;
+    margin: 1rem 0;
+    box-shadow: var(--color-moss) -4px 4px 2px;
+}
