@@ -93,6 +93,12 @@ nav {
     padding-top: 1rem;
 }
 
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .nav-menu ul,
 .nav-menu li,
 .nav-menu a {
@@ -104,6 +110,12 @@ nav {
     background-color: var(--color-ocean);
     color: var(--color-ice);
     font-weight: 500;
+}
+
+.nav-menu svg {
+    width: 2rem;
+    height: 2rem;
+    fill: var(--color-ice);
 }
 
 /* Header */
