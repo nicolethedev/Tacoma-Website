@@ -85,12 +85,32 @@ nav {
     justify-content: space-between;
     align-items: center;
     background-color: var(--color-dark-ocean);
+    position: relative;
+    overflow: hidden;
+}
+
+.nav-menu-links {
+    display: none;
+}
+
+.close-menu {
+    display: none;
+}
+
+.hamburger-menu {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding-right: 1rem;
+    padding-top: 1rem;
 }
 
 .nav-logo img {
     width: 200px;
-    padding-left: 1rem;
+    padding-left: .5rem;
     padding-top: 1rem;
+    padding-bottom: .5rem;
 }
 
 .nav-menu {
@@ -257,6 +277,7 @@ header {
     background-color: var(--color-light-ocean);
     row-gap: .5rem;
     column-gap: .5rem;
+    padding-bottom: 2rem;
 }
 
 .gallery-image {
