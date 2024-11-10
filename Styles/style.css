@@ -241,3 +241,46 @@ header {
     align-items: center;
     text-align: center;
 }
+
+/* Gallery Section */
+
+.gallery-block {
+    background-color: var(--color-light-ocean);
+    padding: 1rem 1rem;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    ;
+    background-color: var(--color-light-ocean);
+}
+
+/* Footer */
+
+.footer-container {
+    background-color: var(--color-ash);
+    color: var(--color-ice);
+    text-align: center;
+    padding: 1rem;
+}
+
+.footer-logo img {
+    max-width: 250px;
+    height: auto;
+    padding: 0 auto;
+}
+
+.footer-container ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-social svg {
+    fill: var(--color-ice);
+}
+
+.footer-social li {
+    display: inline-block;
+    padding-right: .5rem;
+}
