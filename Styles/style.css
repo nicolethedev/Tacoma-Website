@@ -64,19 +64,19 @@ main {
 
 a,
 a:visited {
-    color: var(--color-ocean);
+    color: var(--color-dark-evergreen);
     text-decoration: none;
 }
 
 a:hover,
 a:focus,
 a:active {
-    color: var(--color-dark-ocean);
+    color: var(--color-ash);
     text-decoration: underline;
 }
 
 a:focus {
-    outline: 1px dotted var(--color-ocean); 
+    outline: 1px dotted var(--color-fog); 
 }
 
 /* Navigation */
