@@ -20,6 +20,10 @@
     --color-ash: #33302E;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 /* Typography */
 
 body {
@@ -28,6 +32,7 @@ body {
     font-weight: 400;
     line-height: 1.6;
     color: var(--color-ash);
+ 
 }
 
 h1,
@@ -316,6 +321,20 @@ header {
     background-color: var(--color-light-ocean);
     padding: 1rem 1rem;
     text-align: center;
+}
+
+
+/* Return to Top Section */
+
+.return-top {
+    display: block;
+    background-color: var(--color-dark-ocean);
+    text-align: center;
+    padding: 1rem;
+}
+
+.return-top svg {
+    fill: var(--color-ice);
 }
 
 
