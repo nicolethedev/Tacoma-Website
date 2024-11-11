@@ -32,6 +32,7 @@ body {
     font-weight: 400;
     line-height: 1.6;
     color: var(--color-ash);
+    background-color: var(--color-light-ocean);
  
 }
 
@@ -62,7 +63,8 @@ p {
 /* Elements */
 
 main {
-    max-width: 120rem;
+    max-width: 200rem;
+    display: flex;
 }
 
 table, th, td {
@@ -98,33 +100,32 @@ a:focus {
 }
 
 /* Navigation */
-.nav-container {
+nav {
     display: block;
     background-color: var(--color-dark-ocean);
+}
+
+.nav-container {
     justify-content: center;
     align-items: center;
     margin: auto;
 }
 
 .nav-logo {
-    width: 100%;
+    float: left;
 }
 
 .nav-logo img {
     width: 200px;
-    height: auto;
-    padding-left: .5rem;
+    padding-left: 1rem;
     padding-top: 1rem;
-    padding-bottom: .5rem;
-    margin: 0 auto;
+    padding-bottom: 1rem;
     justify-items: center;
 }
 
 .nav-menu {
-    display: inline-block;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
+    float: right;
+    padding-right: 1rem;
 }
 
 .nav-menu-links {
@@ -144,6 +145,7 @@ a:focus {
 header {
     display: block;
     height: 100vh;
+    z-index: 1;
 }   
 
 .header-container video {
@@ -163,8 +165,7 @@ header {
 
 /* Quote Section */
 .quote-block {
-    display: block;
-    height: auto;
+    display: inline-block;
     width: 100%;
     background-color: var(--color-light-ocean);
     text-align: center;
@@ -187,6 +188,12 @@ header {
 
 span {
     font-style: italic;
+}
+
+@media (min-width: 44em) {
+    .quote {
+        max-width: 50%;
+    }
 }
 
 /* Local Love Section */
@@ -233,7 +240,7 @@ span {
 
 .local-love-block .button,
 .map-text-right .button {
-    display: flex;
+    display: block;
     color: var(--color-ice);
     text-decoration: none;
     font-weight: 600;
@@ -246,6 +253,30 @@ span {
 
 .love-card .button {
     margin-bottom: 1rem;
+}
+
+@media (min-width: 44em) {
+    .love-cards {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: stretch;
+        position: relative;
+    }
+
+    .love-card {
+        max-width: 450px;
+    }
+
+    .love-card img {
+        width: 100%;
+        height: 20vh;
+        object-fit: cover;
+    }
+
+    .love-card .button {
+        
+    }
 }
 
 /* Map section */
