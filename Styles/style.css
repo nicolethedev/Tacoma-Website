@@ -108,7 +108,6 @@ a:focus {
 
 .nav-logo {
     width: 100%;
-    margin: auto;
 }
 
 .nav-logo img {
@@ -122,10 +121,10 @@ a:focus {
 }
 
 .nav-menu {
-    display: flex;
+    display: inline-block;
     align-items: center;
     justify-content: space-between;
-    /* padding: 1rem; */
+    width: 100%;
 }
 
 .nav-menu-links {
@@ -243,6 +242,10 @@ span {
     border-radius: 1rem;
     margin: 0 auto;
     max-width: max-content;
+}
+
+.love-card .button {
+    margin-bottom: 1rem;
 }
 
 /* Map section */
@@ -371,7 +374,7 @@ span {
     background-color: var(--color-ash);
     color: var(--color-ice);
     text-align: center;
-    padding: 1rem;
+    padding: 2rem 0;
 }
 
 .footer-logo img {
