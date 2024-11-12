@@ -59,6 +59,7 @@ p {
 	margin: 1.5em 0;
 }
 
+
 /* Elements */
 
 main {
@@ -140,9 +141,30 @@ nav {
     font-weight: 500;
 }
 
+@media (min-width: 60.6em) {
+    .nav-logo img {
+        width: 300px;
+        padding-left: 1.5rem;
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+    }
+
+    .nav-menu {
+        padding-right: 2rem;
+    }
+
+    .nav-menu ul,
+    .nav-menu li,
+    .nav-menu a {
+        font-size: 1.5rem;
+        gap: 2rem;
+    }
+}
+
 /* Header */
 header {
     display: block;
+    width: 100%;
     height: 100vh;
     z-index: 1;
 }   
@@ -159,7 +181,18 @@ header {
     object-fit: cover;
     display: block;
     height: 100vh;
-    width: auto;
+    width: fit-content;
+}
+
+/* For interior title blocks */
+
+.Title-block {
+    display: inline-block;
+    width: 100%;
+    height: auto;
+    background-color: var(--color-light-ocean);
+    padding: 1rem 1rem;
+    text-align: center;
 }
 
 /* Quote Section */
@@ -191,7 +224,11 @@ span {
 
 @media (min-width: 44em) {
     .quote {
-    max-width: 50%;
+    max-width: 75%;
+    }
+
+    .quote h2 {
+        font-size: 1.5rem;
     }
 }
 
@@ -255,6 +292,11 @@ span {
 }
 
 @media (min-width: 60.6em) {
+    .local-love-block h2 {
+        font-size: 2rem;
+        padding-left: .5rem;
+    }
+
     .love-cards {
         display: flex;
         flex-direction: row;
@@ -318,6 +360,11 @@ span {
         flex-direction: column;
     }
 
+    .map-text-right h2 {
+        font-size: 2rem;
+        font-weight: 700;
+    }
+
     .map-text-right p {
         padding-right: 4rem;
     }
@@ -375,6 +422,26 @@ span {
     font-size: 1rem;
     font-weight: 500;
     line-height: 0;
+}
+
+@media (min-width: 60.6em) {
+    .stats-block h2 {
+        font-size: 2rem;
+        padding-left: .5rem;
+    }
+
+    .stat svg {
+        width: 4rem;
+        height: 4rem;
+    }
+
+    .stat h3 {
+        font-size: 1.5rem;
+    }
+
+    .stat p {
+        font-size: 1.3rem
+    }
 }
 
 /* Gallery Section */
@@ -436,6 +503,11 @@ span {
 }
 
 @media (min-width: 60.6em) {
+    .gallery-block h2 {
+        font-size: 2rem;
+        padding-left: .5rem;
+    }
+
     .gallery {
         display: grid;
         grid-template-columns: repeat(6, 1fr);
@@ -616,7 +688,7 @@ span {
         position: fixed;
         bottom: 1rem;
         right: 1rem;
-        fill: var(--color-ice);
+        fill: var(--color-ash);
         opacity: 70%;
         height: 45px;
         width: 45px;
