@@ -612,6 +612,24 @@ span {
     fill: var(--color-ice);
 }
 
+@media (min-width: 60.6em) {
+    .return-top {
+        position: fixed;
+        background-color: transparent;
+        z-index: 900;
+    }
+
+    .return-top svg {
+        position: fixed;
+        bottom: 1rem;
+        right: 1rem;
+        fill: var(--color-ice);
+        opacity: 70%;
+        height: 45px;
+        width: 45px;
+    }
+}
+
 
 /* Footer */
 
@@ -640,4 +658,36 @@ span {
 .footer-social li {
     display: inline-block;
     padding-right: .5rem;
+}
+
+@media (min-width: 60.6em) {
+    .footer-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 4rem;
+        padding-right: 5rem;
+    }
+
+    .footer-logo img {
+        max-width: 250px;
+        height: auto;
+        padding: 0 auto;
+    }
+
+    .footer-container ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    .footer-social svg {
+        fill: var(--color-ice);
+        width: 2rem;
+        height: 2rem;
+    }
+
+    .footer-social li {
+        display: inline-block;
+        padding-right: 1rem;
+    }
 }
