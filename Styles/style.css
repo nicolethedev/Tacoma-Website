@@ -228,6 +228,24 @@ span {
     }
 
     .quote h2 {
+        font-size: 1.25em;
+    }
+
+    .quote h3 {
+        font-size: 1.3rem;
+    }
+}
+
+@media (min-width: 60.6em) {
+    .quote {
+        max-width: 75%;
+    }
+
+    .quote h2 {
+        font-size: 1.6rem;
+    }
+
+    .quote h3 {
         font-size: 1.5rem;
     }
 }
@@ -256,11 +274,12 @@ span {
 }
 
 .love-card {
-    border: var(--color-light-moss) 5px solid;
-    border-radius: 8px;
+    border: var(--color-ocean) 4px solid;
+    border-radius: 6px;
     margin: 1rem 0;
-    box-shadow: var(--color-moss) -4px 4px 3px;
-    background-color: var(--color-light-moss);
+    box-shadow: var(--color-ocean) 3px 4px;
+    background-color: var(--color-fog);
+    padding: .75rem;
 }
 
 .love-card img {
@@ -280,7 +299,7 @@ span {
     color: var(--color-ice);
     text-decoration: none;
     font-weight: 600;
-    background-color: var(--color-evergreen);
+    background-color: var(--color-ash);
     padding: 1rem 2rem;
     border-radius: 1rem;
     margin: 0 auto;
@@ -306,7 +325,7 @@ span {
     }
 
     .love-card {
-        max-width: 450px;
+        max-width: 500px;
     }
 
     .love-card img {
@@ -314,6 +333,20 @@ span {
         height: 20vh;
         object-fit: cover;
     }
+
+    .love-card h3 {
+        font-size: 2rem;
+        font-weight: 700;
+    }
+
+    .love-card p {
+        font-size: 1.2rem;
+    }
+
+    .local-love-block .button,
+    .map-text-right .button {
+        margin-top: 10%;
+        font-size: 1.4rem;
 }
 
 /* Map section */
@@ -366,12 +399,68 @@ span {
     }
 
     .map-text-right p {
+        font-size: 1.25rem;
         padding-right: 4rem;
     }
 
     .map-text-right .button {
         margin-top: 10%;
     }
+}
+
+/* Internal Block Sections */
+
+.image-left {
+    display: flex;
+    background-color: var(--color-moss);
+    width: 100%;
+    padding: 2rem;
+    justify-content: center;
+}
+
+.text-right {
+    background-color: var(--color-light-moss);
+    padding: 2rem;
+}
+
+@media (min-width: 60.6em) {
+    .block {
+        display: flex;
+        height: fit-content;
+        border-bottom: 7px solid var(--color-light-ocean);  
+    }
+
+    .image-left {
+        width: 50%;
+    }
+
+    .image-left img {
+        width: 100%;
+        height: 100%;
+        max-width: 500px;
+        object-fit: cover;
+    }
+
+    .text-right {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .text-right h2 {
+        font-size: 2rem;
+        font-weight: 700;
+    }
+
+    .text-right p {
+        font-size: 1.25rem;
+        padding-right: 4rem;
+    }
+
+    .text-right .button {
+        margin-top: 10%;
+    }
+
 }
 
 /* Stats section */
