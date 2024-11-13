@@ -777,7 +777,6 @@ span {
 
     .return-top svg {
         position: fixed;
-        z-index: 90000;
         bottom: 1rem;
         right: 1rem;
         background-color: var(--color-ice);
