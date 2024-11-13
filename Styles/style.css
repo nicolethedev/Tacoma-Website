@@ -762,7 +762,6 @@ span {
 @media (min-width: 43em) {
     table {
         padding: 1rem 4rem;
-        width: 100%;
         margin-left: auto;
         margin-right: auto;
     }
