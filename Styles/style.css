@@ -774,20 +774,19 @@ span {
 }
 
 @media (min-width: 60.6em) {
-    .return-top {
-        position: fixed;
-        background-color: transparent;
-        z-index: 900;
-    }
 
     .return-top svg {
         position: fixed;
+        z-index: 90000;
         bottom: 1rem;
         right: 1rem;
+        background-color: var(--color-ice);
+        border-radius: 50%;
+        padding: 1rem;
         fill: var(--color-ash);
         opacity: 70%;
-        height: 45px;
-        width: 45px;
+        height: 50px;
+        width: 50px;
     }
 }
 
