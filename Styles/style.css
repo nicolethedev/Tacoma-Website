@@ -80,6 +80,11 @@ tr:hover {
     background-color: var(--color-light-moss);
 }
 
+.love-card:hover {
+    transform: scale(1.05);
+    transition: transform 0.5s ease;
+}
+
 /* Links */
 
 a,
@@ -177,11 +182,18 @@ header {
 
 /* For Header on Interior Pages */
 
-.header-container img {
+.header-image {
     object-fit: cover;
     display: block;
     height: 100vh;
-    width: fit-content;
+    width: auto;
+}
+
+.header-image img {
+    object-fit: cover;
+    display: block;
+    height: 100vh;
+    width: auto;
 }
 
 /* For interior title blocks */
@@ -274,10 +286,10 @@ span {
 }
 
 .love-card {
-    border: var(--color-ocean) 4px solid;
+    border: var(--color-ocean) 5px solid;
     border-radius: 6px;
     margin: 1rem 0;
-    box-shadow: var(--color-ocean) 3px 4px;
+    box-shadow: var(--color-ocean) 5px 5px;
     background-color: var(--color-fog);
     padding: .75rem;
 }
@@ -348,7 +360,7 @@ span {
         margin-top: 10%;
         font-size: 1.4rem;
 }
-
+}
 /* Map section */
 
 .map-block {
@@ -409,6 +421,12 @@ span {
 }
 
 /* Internal Block Sections */
+
+.block {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
 
 .image-left {
     display: flex;
