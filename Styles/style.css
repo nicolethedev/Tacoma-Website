@@ -759,12 +759,32 @@ span {
     padding: 1rem 1rem;
 }
 
+.table-section a {
+    color: var(--color-ash);
+}
+
 @media (min-width: 43em) {
     table {
         padding: 1rem 4rem;
         margin-left: auto;
         margin-right: auto;
     }
+
+    table th {
+        font-size: 1.5rem;
+        font-weight: 700;
+    }
+
+    table td {
+        font-size: 1.25rem;
+        font-weight: 500;
+        padding: .25rem 1rem;
+    }
+
+    table {
+        border: 5px solid var(--color-ice);
+    }
+    
 }
 
 
