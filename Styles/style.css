@@ -85,6 +85,24 @@ tr:hover {
     transition: transform 0.5s ease;
 }
 
+.skip-link {
+    position: absolute;
+    top: -499999px;
+    left: -999999px;
+    background-color: var(--color-ash);
+    padding: 1rem;
+    opacity: 0;
+    z-index: 999;
+}
+
+.skip-link:focus {
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 1;
+    text-decoration: none;
+}
+
 /* Links */
 
 a,
