@@ -1,6 +1,6 @@
 const scrollToTopBtn = document.getElementById("return-top");
 
-const mediaQuery = window.matchMedia("(min-width: 60.6em)");
+const mediaQuery = window.matchMedia("(min-width: 21em)");
 
 function handleScroll() {
     if (mediaQuery.matches) {
